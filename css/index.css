@@ -1,0 +1,224 @@
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url(../img/1659197542821.png);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+main {
+  backdrop-filter: saturate(150%) blur(100px);
+  height: 100vh;
+}
+
+@media (orientation: landscape) {
+  .audio-player {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .jacket-lyric {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+  }
+
+  #jacket {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  #jacket img {
+    width: min(90%, 50vh);
+    margin: 20px;
+    box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 0.6);
+  }
+
+  #lyrics {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .title {
+    margin-top: 10vh;
+    height: 100vh;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .lyric {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  #lyric {
+    font-size: 1.5em;
+  }
+
+  #lyric_a, #lyric_b {
+    color: rgba(0, 0, 0, 0.5);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+  }
+
+  .player {
+    display: flex;
+    width: 100%;
+    margin-top: 85vh;
+    position: relative;
+    justify-content: center;
+  }
+
+  .player audio {
+    width: 70%;
+  }
+
+  #switch_btn {
+    display: none;
+  }
+
+  #backward, #play, #pause, #forward {
+    font-size: 2em;
+    width: 20vw;
+    background: transparent;
+    border: none;
+  }
+
+  #pause {
+    display: none;
+  }
+
+  #play,#pause{
+
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  #backward,#forward {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: rgba(255, 255, 255, 0.67);
+  }
+
+  .audio-player {
+    height: 100vh;
+  }
+
+  .main-p {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .jacket-lyric {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #jacket {
+    display: block;
+  }
+
+  #jacket img {
+    width: min(90vw, 50vh);
+    box-shadow: 0px 0px 50px -25px rgba(0, 0, 0, 0.6);
+  }
+
+  .title {
+    display: none;
+  }
+
+  #lyrics {
+    display: none;
+    height: 50%;
+  }
+
+  .lyric {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  #lyric {
+    font-size: 1.5em;
+  }
+
+  #lyric_a, #lyric_b {
+    color: rgba(0, 0, 0, 0.5);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+  }
+
+  .player {
+    display: flex;
+    justify-content: center;
+  }
+
+  .player audio {
+    width: 90%;
+  }
+
+  #switch_btn {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    background: transparent;
+    border: none;
+  }
+
+  #backward, #play, #pause, #forward {
+    font-size: 2em;
+    width: 25vw;
+    background: transparent;
+    border: none;
+  }
+
+  #pause {
+    display: none;
+  }
+
+  #play,#pause{
+
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  #backward,#forward {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

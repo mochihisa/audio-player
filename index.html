@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>カロリーゼロ</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/a75100396c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div class="audio-player">
+      <div class="main-p">
+
+        <div class="jacket-lyric">
+          <div id="jacket">
+            <img src="./img/1659197542821.png" alt="">
+          </div>
+          <div id="lyrics">
+            <div class="title">
+              <h1>01. カロリーゼロ</h1>
+            </div>
+            <div class="lyric">
+              <center>
+                <p id="lyric_b"></p>
+                <p id="lyric"></p>
+                <p id="lyric_a"></p>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <button id="switch_btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
+      <div class="player">
+        <audio id="music" src="./audio-data/カロリーゼロ.flac"></audio>
+        <button id="backward"><i class="fa-solid fa-backward"></i></button>
+        <button id="play"><i class="fa-solid fa-play"></i></button>
+        <button id="pause"><i class="fa-solid fa-pause"></i></button>
+        <button id="forward"><i class="fa-solid fa-forward"></i></button>
+      </div>
+    </div>
+  </main>
+
+</body>
+<script src="./js/lyrics.js"></script>
+<script type="text/javascript">
+  main();
+
+
+</script>
+
+</html>
