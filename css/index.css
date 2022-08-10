@@ -88,9 +88,10 @@ main {
   .player {
     display: flex;
     width: 100%;
-    margin-top: 85vh;
+    margin-top: 80vh;
     position: relative;
     justify-content: center;
+    flex-flow: column;
   }
 
   .player audio {
@@ -99,6 +100,24 @@ main {
 
   #switch_btn {
     display: none;
+  }
+
+  .seek_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .seek_bar input {
+    width: 70%;
+    margin: 20px;
+  }
+
+  .play-pause {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
   }
 
   #backward, #play, #pause, #forward {
@@ -112,12 +131,11 @@ main {
     display: none;
   }
 
-  #play,#pause{
-
+  #play, #pause {
     color: rgba(0, 0, 0, 0.7);
   }
 
-  #backward,#forward {
+  #backward, #forward {
     color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -187,6 +205,7 @@ main {
   .player {
     display: flex;
     justify-content: center;
+    flex-flow: column;
   }
 
   .player audio {
@@ -213,12 +232,29 @@ main {
     display: none;
   }
 
-  #play,#pause{
-
+  #play, #pause {
     color: rgba(0, 0, 0, 0.7);
   }
 
-  #backward,#forward {
+  #backward, #forward {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  .seek_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .seek_bar input {
+    width: 70%;
+    margin: 20px;
+  }
+
+  .play-pause {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
   }
 }

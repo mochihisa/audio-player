@@ -39,13 +39,19 @@ function update() {
   let media = document.getElementById('music');
   let now = media.currentTime;
 
-  console.log(now);
-  console.log(media.paused);
-  console.log(counter);
-  console.log(lyrics.length);
+  //console.log(now);
+  //console.log(media.paused);
+  //console.log(counter);
+  //console.log(lyrics.length);
   timestamp++;
 
   id = window.requestAnimationFrame(update);
+
+  let seek_bar = document.getElementById("seek_bar");
+  if (timestamp % 60 == 0) {
+    seek_bar.max = media.duration;
+    seek_bar.value = media.currentTime;
+  }
 
   if (lyrics.length > counter) {
     if (now >= lyrics[counter + 1][0]) {
@@ -91,7 +97,8 @@ window.addEventListener('DOMContentLoaded', function() {
   const btn_backward = document.getElementById('backward');
   const btn_play = document.getElementById('play');
   const btn_pause = document.getElementById('pause');
-  const audioElement = document.querySelector('audio');
+  let media = document.getElementById('music');
+  let seek_bar = document.getElementById("seek_bar");
 
 
   let lyric_b = document.getElementById('lyric_b');
@@ -99,21 +106,21 @@ window.addEventListener('DOMContentLoaded', function() {
   let lyric_a = document.getElementById('lyric_a');
 
   btn_play.addEventListener('click', e => {
-    audioElement.play();
+    media.play();
     btn_play.style.display = 'none';
     btn_pause.style.display = 'block';
     btn_backward.style.color = 'rgba(0, 0, 0, 0.7)';
   });
 
   btn_pause.addEventListener('click', e => {
-    audioElement.pause();
+    media.pause();
     btn_pause.style.display = 'none';
     btn_play.style.display = 'block';
   });
 
   btn_backward.addEventListener('click', e => {
-    audioElement.pause();
-    audioElement.currentTime = 0;
+    media.pause();
+    media.currentTime = 0;
     btn_backward.style.color = 'rgba(0, 0, 0, 0.3)';
     btn_pause.style.display = 'none';
     btn_play.style.display = 'block';
@@ -121,5 +128,16 @@ window.addEventListener('DOMContentLoaded', function() {
     lyric_b.innerHTML = '';
     lyric.innerHTML = '';
     lyric_a.innerHTML = '・・・・・・・・・・・';
+
+
+    seek_bar.value = "0";
   });
+});
+
+
+let seek_bar = document.getElementById("seek_bar");
+
+seek_bar.addEventListener('input', function() {
+  let media = document.getElementById('music');
+  media.currentTime = seek_bar.value;
 });
