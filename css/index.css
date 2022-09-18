@@ -227,12 +227,12 @@ main {
   }
 
   .title-mob h1 {
-    font-size: 20px;
+    font-size: 1.45em;
     margin: 0;
   }
 
   .title-mob {
-    margin-left: 10%;
+    margin-left: 0.9em;
   }
 
   .artist-mob {
