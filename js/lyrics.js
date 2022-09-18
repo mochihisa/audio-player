@@ -18,8 +18,9 @@ function main() {
   lyrics[4] = [27.5, 'さっきのごめんの涙が溜まったまま'];
   lyrics[5] = [37.5, '「ずっと2人でいようね」は叶わず'];
   lyrics[6] = [46.5, '意味のない味だけがわたしを何度も何度も惑わせる'];
-  lyrics[7] = [media.duration, ''];
-  lyrics[8] = [];
+  lyrics[7] = [57, 'まだまだあなただけはまだ消えないで'];
+  lyrics[8] = [media.duration, ''];
+  lyrics[9] = [];
 
   lyric_b.innerHTML = '';
   lyric.innerHTML = '';
@@ -156,4 +157,5 @@ audio.addEventListener("ended", function() {
   btn_backward.style.color = 'rgba(0, 0, 0, 0.3)';
   btn_pause.style.display = 'none';
   btn_play.style.display = 'block';
+  seek_bar.value = "0";
 }, false);
