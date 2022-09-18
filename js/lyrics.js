@@ -52,27 +52,29 @@ function update() {
     seek_bar.max = media.duration;
     seek_bar.value = media.currentTime;
   }
-
-  if (lyrics.length > counter) {
-    if (now >= lyrics[counter + 1][0]) {
-      counter++;
-    } else {
-      if (now >= lyrics[counter][0]) {
-        if (counter == 0) {
-          lyric_b.innerHTML = '';
-          lyric.innerHTML = lyrics[counter][1];
-          lyric_a.innerHTML = lyrics[counter + 1][1];
-        } else {
-          lyric_b.innerHTML = lyrics[counter - 1][1];
-          lyric.innerHTML = lyrics[counter][1];
-          lyric_a.innerHTML = lyrics[counter + 1][1];
-        }
+  if (timestamp % 5 == 0) {
+    if (lyrics.length > counter) {
+      if (now >= lyrics[counter + 1][0]) {
         counter++;
       } else {
-        counter--;
+        if (now >= lyrics[counter][0]) {
+          if (counter == 0) {
+            lyric_b.innerHTML = '';
+            lyric.innerHTML = lyrics[counter][1];
+            lyric_a.innerHTML = lyrics[counter + 1][1];
+          } else {
+            lyric_b.innerHTML = lyrics[counter - 1][1];
+            lyric.innerHTML = lyrics[counter][1];
+            lyric_a.innerHTML = lyrics[counter + 1][1];
+          }
+          counter++;
+        } else {
+          counter--;
+        }
       }
     }
   }
+
 }
 
 
@@ -140,9 +142,4 @@ let seek_bar = document.getElementById("seek_bar");
 seek_bar.addEventListener('input', function() {
   let media = document.getElementById('music');
   media.currentTime = seek_bar.value;
-});
-
-
-window.addEventListener("orientationchange resize", function() {
-	alert ("画面が回転しました" );
 });
