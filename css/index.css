@@ -1,11 +1,12 @@
 html {
   height: 100vh;
   overscroll-behavior: none;
+  height: -webkit-fill-available;
 }
 
 body {
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background-image: url(../img/1659197542821_blur.webp);
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
@@ -19,7 +20,8 @@ h1 {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 @media (orientation: landscape) {
@@ -249,8 +251,7 @@ main {
     border: none;
   }
 
-  .switch_btn{
-
+  .switch_btn {
     display: flex;
     justify-content: flex-end;
     width: 95vw;
