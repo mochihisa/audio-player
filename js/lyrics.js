@@ -5,7 +5,9 @@ function main() {
   let lyric = document.getElementById('lyric');
   let lyric_a = document.getElementById('lyric_a');
   let media = document.getElementById('music');
+  let seek_bar = document.getElementById("seek_bar");
 
+  seek_bar.max = media.duration;
 
   timestamp = 0;
   counter = 0;
@@ -19,9 +21,8 @@ function main() {
   lyrics[5] = [37.5, '「ずっと2人でいようね」は叶わず'];
   lyrics[6] = [46.5, '意味のない味だけがわたしを何度も何度も惑わせる'];
   lyrics[7] = [57, 'まだまだあなただけはまだ消えないで'];
-  lyrics[8] = [media.duration, ''];
+  lyrics[8] = [, ''];
   lyrics[9] = [];
-
   lyric_b.innerHTML = '';
   lyric.innerHTML = '';
   lyric_a.innerHTML = lyrics[0][1];
@@ -48,9 +49,11 @@ function update() {
 
   id = window.requestAnimationFrame(update);
 
+
   let seek_bar = document.getElementById("seek_bar");
+
+//  console.log(lyrics[8]);
   if (timestamp % 60 == 0) {
-    seek_bar.max = media.duration;
     seek_bar.value = media.currentTime;
   }
   if (timestamp % 5 == 0) {
