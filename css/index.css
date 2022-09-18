@@ -244,12 +244,16 @@ main {
 
   #switch_btn {
     color: rgba(0, 0, 0, 0.7);
-    width: 95vw;
-    display: flex;
-    justify-content: flex-end;
     font-size: 1.5em;
     background: transparent;
     border: none;
+  }
+
+  .switch_btn{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 95vw;
   }
 
   #backward, #play, #pause, #forward {

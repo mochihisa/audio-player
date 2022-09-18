@@ -14,16 +14,16 @@
   <script src="https://kit.fontawesome.com/a75100396c.js" crossorigin="anonymous"></script>
   <link rel="manifest" href="manifest.json">
   <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        console.log('ServiceWorker registration failed: ', err);
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
       });
-    });
-  }
-</script>
+    }
+  </script>
 </head>
 
 <body>
@@ -49,8 +49,9 @@
             </div>
           </div>
         </div>
-
-        <button id="switch_btn"><i class="fa-solid fa-bars"></i></button>
+        <div class="switch_btn">
+          <button id="switch_btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
       </div>
 
       <div class="player">
