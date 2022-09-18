@@ -110,7 +110,7 @@ main {
   .player {
     display: flex;
     width: 100%;
-    margin-top: 80vh;
+    margin-top: 70vh;
     position: relative;
     justify-content: center;
     flex-flow: column;
