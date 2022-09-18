@@ -1,7 +1,7 @@
 var CACHE_NAME = 'test_app';
 var urlsToCache = [
-  '/img/1659197542821.png',
-  '/audio-data/カロリーゼロ.flac'
+  '/audio-player/img/1659197542821.png',
+  '/audio-player/audio-data/カロリーゼロ.flac'
 ];
 
 // インストール処理
