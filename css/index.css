@@ -72,12 +72,8 @@ input[type=range]::-moz-range-thumb {
 }
 
 .installbotton p {
-  margin: 0;
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.5);
-}
-
-.installbotton a {
   text-decoration: none;
   background: #fff;
   border-radius: 50px;
@@ -88,17 +84,16 @@ input[type=range]::-moz-range-thumb {
   margin: 0 auto;
   max-width: 260px;
   padding: 10px 25px;
-  color: #313131;
   transition: 0.3s ease-in-out;
   font-weight: 500;
 }
 
-.installbotton a:hover {
+.installbotton p:hover {
   background: #313131;
   color: #FFF;
 }
 
-.installbotton a:hover:after {
+.installbotton p:hover:after {
   border-color: #FFF;
 }
 
