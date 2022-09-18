@@ -2,7 +2,7 @@
   "theme_color": "#4a90e2",
   "background_color": "#50e3c2",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/audio-player/",
   "start_url": "/index.html",
   "name": "test_app",
   "short_name": "test",
