@@ -279,7 +279,7 @@ main {
   }
 
   .seek_bar input {
-    width: 10%;
+    width: 80%;
     margin: 20px;
   }
 
