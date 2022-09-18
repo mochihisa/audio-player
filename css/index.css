@@ -255,11 +255,13 @@ main {
     font-size: 2em;
     background: transparent;
     border: none;
+    margin: 0;
   }
 
   .backward, .play_pause, .forward {
     width: 25vw;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   #pause {
