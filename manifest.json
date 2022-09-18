@@ -3,7 +3,11 @@
   "background_color": "#50e3c2",
   "display": "standalone",
   "scope": "/audio-player/",
+<<<<<<< HEAD
   "start_url": "/audio-player/index.html",
+=======
+  "start_url": "/index.html",
+>>>>>>> 33ff8868bb3dfb6271ed586624e1b19ebdb7bf25
   "name": "test_app",
   "short_name": "test",
   "icons": [{
