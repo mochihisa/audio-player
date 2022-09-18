@@ -214,7 +214,7 @@ main {
   }
 
   .player {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     justify-content: flex-start;
     flex-flow: column;
