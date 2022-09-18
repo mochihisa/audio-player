@@ -1,11 +1,12 @@
 html {
-  overscroll-behavior: none;
-  height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;
 }
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0;
   background-image: url(../img/1659197542821_blur.webp);
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten;
@@ -19,30 +20,30 @@ h1 {
 }
 
 main {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100dvh;
 }
 
 @media (orientation: landscape) {
   .audio-player {
     display: flex;
     width: 100%;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
   }
 
   .jacket-lyric {
     position: absolute;
     display: flex;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
     width: 100%;
   }
 
   #jacket {
     width: 50%;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +58,8 @@ main {
 
   #lyrics {
     width: 50%;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,8 +68,8 @@ main {
 
   .title {
     margin-top: 10vh;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
     position: relative;
     justify-content: flex-start;
   }
@@ -88,8 +89,8 @@ main {
 
   .lyric {
     position: absolute;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,8 +168,8 @@ main {
   }
 
   .audio-player {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: 100dvh;
   }
 
   .main-p {
