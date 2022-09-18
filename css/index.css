@@ -1,6 +1,4 @@
 html {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   overscroll-behavior: none;
   height: -webkit-fill-available;
 }
