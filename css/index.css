@@ -1,11 +1,8 @@
 html {
-  height: -webkit-fill-available;
   height: 100vh;
 }
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   height: 100vh;
   margin: 0;
   background-image: url(../img/1659197542821.png);
