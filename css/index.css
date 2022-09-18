@@ -74,9 +74,11 @@ main {
     margin: 0;
     color: rgba(0, 0, 0, 0.7);
   }
-.title-mob {
-  display: none;
-}
+
+  .title-mob {
+    display: none;
+  }
+
   .lyric {
     position: absolute;
     height: 100vh;
@@ -240,6 +242,7 @@ main {
   }
 
   #switch_btn {
+    color: rgba(0, 0, 0, 0.7);
     width: 95vw;
     display: flex;
     justify-content: flex-end;
