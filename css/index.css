@@ -232,12 +232,12 @@ main {
   }
 
   .title-mob {
-    margin-left: 0.9em;
+    margin-left: 10%;
   }
 
   .artist-mob {
     margin: 0;
-    font-size: 13px;
+    font-size: 0.9em;
     color: rgba(0, 0, 0, 0.7);
   }
 
