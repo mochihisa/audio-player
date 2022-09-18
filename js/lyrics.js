@@ -52,7 +52,7 @@ function update() {
 
   let seek_bar = document.getElementById("seek_bar");
 
-//  console.log(lyrics[8]);
+  //  console.log(lyrics[8]);
   if (timestamp % 60 == 0) {
     seek_bar.value = media.currentTime;
   }
@@ -147,6 +147,10 @@ let seek_bar = document.getElementById("seek_bar");
 
 seek_bar.addEventListener('input', function() {
   let media = document.getElementById('music');
+  seek_bar.max = media.duration;
+  //console.log(seek_bar.value);
+  //console.log(seek_bar.max);
+  //console.log(media.duration);
   media.currentTime = seek_bar.value;
 });
 
