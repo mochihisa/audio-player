@@ -3,7 +3,9 @@ var urlsToCache = [
   '/audio-player/img/1659197542821.webp',
   '/audio-player/audio-data/カロリーゼロ.flac',
   '/audio-player/js/lyrics.js',
-  '/audio-player/css/index.css'
+  '/audio-player/css/index.css',
+  'https://kit.fontawesome.com/a75100396c.js',
+  'https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap'
 ];
 
 // インストール処理
