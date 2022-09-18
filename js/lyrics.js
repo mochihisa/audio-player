@@ -18,7 +18,7 @@ function main() {
   lyrics[4] = [27.5, 'さっきのごめんの涙が溜まったまま'];
   lyrics[5] = [37.5, '「ずっと2人でいようね」は叶わず'];
   lyrics[6] = [46.5, '意味のない味だけがわたしを何度も何度も惑わせる'];
-  lyrics[7] = [, ''];
+  lyrics[7] = [media.duration, ''];
   lyrics[8] = [];
 
   lyric_b.innerHTML = '';
@@ -82,6 +82,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const switch_btn = document.getElementById('switch_btn');
   const jacket = document.getElementById('jacket');
   const lyrics = document.getElementById('lyrics');
+  const btn_play = document.getElementById('play');
+  const btn_pause = document.getElementById('pause');
 
   switch_btn.addEventListener('click', () => {
     if (getComputedStyle(jacket).display == 'none') {
@@ -143,3 +145,15 @@ seek_bar.addEventListener('input', function() {
   let media = document.getElementById('music');
   media.currentTime = seek_bar.value;
 });
+
+let audio = document.getElementById('music');
+audio.addEventListener("ended", function() {
+
+  const btn_backward = document.getElementById('backward');
+  const btn_play = document.getElementById('play');
+  const btn_pause = document.getElementById('pause');
+  audio.currentTime = 0;
+  btn_backward.style.color = 'rgba(0, 0, 0, 0.3)';
+  btn_pause.style.display = 'none';
+  btn_play.style.display = 'block';
+}, false);
