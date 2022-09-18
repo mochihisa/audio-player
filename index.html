@@ -29,60 +29,58 @@
 <body>
   <main>
     <div class="audio-player">
+      <button id="InstallBtn" class="installbotton" style="display:none;">
+        <a href="#"><p>install <i class="fa-solid fa-download"></i></p></a>
+      </button>
+        <script src="./js/pwa_install.js"></script>
       <div class="main-p">
 
-      <div class="jacket-lyric">
-        <div id="jacket">
-          <img src="./img/1659197542821.webp" alt="">
-        </div>
-        <div id="lyrics">
 
-          <div class="title">
-
-              <button id="InstallBtn" class="installbotton" style="display:none;">
-                アプリをインストールする
-              </button>
+        <div class="jacket-lyric">
+          <div id="jacket">
+            <img src="./img/1659197542821.webp" alt="">
+          </div>
+          <div id="lyrics">
+            <div class="title">
+              <h1>01. カロリーゼロ</h1>
+              <p class="artist">作詞・作曲 : ぺんぺん</p>
             </div>
-            <script src="./js/pwa_install.js"></script>
-            <h1>01. カロリーゼロ</h1>
-            <p class="artist">作詞・作曲 : ぺんぺん</p>
-          </div>
-          <div class="lyric">
-            <center>
-              <p id="lyric_b"></p>
-              <p id="lyric"></p>
-              <p id="lyric_a"></p>
-            </center>
+            <div class="lyric">
+              <center>
+                <p id="lyric_b"></p>
+                <p id="lyric"></p>
+                <p id="lyric_a"></p>
+              </center>
+            </div>
           </div>
         </div>
+        <div class="switch_btn">
+          <button id="switch_btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
       </div>
-      <div class="switch_btn">
-        <button id="switch_btn"><i class="fa-solid fa-bars"></i></button>
-      </div>
-    </div>
 
-    <div class="player">
-      <div class="title-mob">
-        <h1>01. カロリーゼロ</h1>
-        <p class="artist-mob">作詞・作曲 : ぺんぺん</p>
-      </div>
-      <audio id="music" src="./audio-data/カロリーゼロ.flac"></audio>
-      <div class="seek_bar">
-        <input type="range" id="seek_bar" value="0">
-      </div>
-      <div class="play-pause">
-        <div class="backward">
-          <button id="backward"><i class="fa-solid fa-backward"></i></button>
+      <div class="player">
+        <div class="title-mob">
+          <h1>01. カロリーゼロ</h1>
+          <p class="artist-mob">作詞・作曲 : ぺんぺん</p>
         </div>
-        <div class="play_pause">
-          <button id="play"><i class="fa-solid fa-play"></i></button>
-          <button id="pause"><i class="fa-solid fa-pause"></i></button>
+        <audio id="music" src="./audio-data/カロリーゼロ.flac"></audio>
+        <div class="seek_bar">
+          <input type="range" id="seek_bar" value="0">
         </div>
-        <div class="forward">
-          <button id="forward"><i class="fa-solid fa-forward"></i></button>
+        <div class="play-pause">
+          <div class="backward">
+            <button id="backward"><i class="fa-solid fa-backward"></i></button>
+          </div>
+          <div class="play_pause">
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="pause"><i class="fa-solid fa-pause"></i></button>
+          </div>
+          <div class="forward">
+            <button id="forward"><i class="fa-solid fa-forward"></i></button>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </main>
 
