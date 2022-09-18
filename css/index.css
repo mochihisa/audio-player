@@ -58,45 +58,6 @@ input[type=range]::-moz-range-thumb {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
 
-#InstallBtn {}
-
-.installbotton {
-  background: none;
-  border: 0;
-  width: 100vw;
-  margin-top: 1vh;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 100;
-}
-
-.installbotton p {
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-  background: #fff;
-  border-radius: 50px;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 260px;
-  padding: 10px 25px;
-  transition: 0.3s ease-in-out;
-  font-weight: 500;
-}
-
-.installbotton p:hover {
-  background: #313131;
-  color: #FFF;
-}
-
-.installbotton p:hover:after {
-  border-color: #FFF;
-}
-
 @media (orientation: landscape) {
   .audio-player {
     display: flex;
