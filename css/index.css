@@ -66,6 +66,17 @@ main {
     justify-content: flex-start;
   }
 
+  .title h1 {
+    margin-bottom: 0;
+  }
+
+  .artist {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7);
+  }
+.title-mob {
+  display: none;
+}
   .lyric {
     position: absolute;
     height: 100vh;
@@ -150,7 +161,7 @@ main {
   }
 
   .main-p {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,13 +214,30 @@ main {
   }
 
   .player {
+    height: 30vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-flow: column;
+    margin-top: 3vh;
   }
 
   .player audio {
     width: 90%;
+  }
+
+  .title-mob h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .title-mob {
+    margin-left: 10%;
+  }
+
+  .artist-mob {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   #switch_btn {
@@ -223,9 +251,13 @@ main {
 
   #backward, #play, #pause, #forward {
     font-size: 2em;
-    width: 25vw;
     background: transparent;
     border: none;
+  }
+
+  .backward, .play_pause, .forward {
+    width: 25vw;
+    text-align: center;
   }
 
   #pause {
@@ -247,7 +279,7 @@ main {
   }
 
   .seek_bar input {
-    width: 70%;
+    width: 80%;
     margin: 20px;
   }
 

@@ -141,3 +141,8 @@ seek_bar.addEventListener('input', function() {
   let media = document.getElementById('music');
   media.currentTime = seek_bar.value;
 });
+
+
+window.addEventListener("orientationchange resize", function() {
+	alert ("画面が回転しました" );
+});

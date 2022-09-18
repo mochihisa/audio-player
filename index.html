@@ -24,6 +24,7 @@
           <div id="lyrics">
             <div class="title">
               <h1>01. カロリーゼロ</h1>
+              <p class="artist">ぺんぺん</p>
             </div>
             <div class="lyric">
               <center>
@@ -39,15 +40,25 @@
       </div>
 
       <div class="player">
+        <div class="title-mob">
+          <h1>01. カロリーゼロ</h1>
+          <p class="artist-mob">ぺんぺん</p>
+        </div>
         <audio id="music" src="./audio-data/カロリーゼロ.flac"></audio>
         <div class="seek_bar">
           <input type="range" id="seek_bar" value="0">
         </div>
         <div class="play-pause">
-          <button id="backward"><i class="fa-solid fa-backward"></i></button>
-          <button id="play"><i class="fa-solid fa-play"></i></button>
-          <button id="pause"><i class="fa-solid fa-pause"></i></button>
-          <button id="forward"><i class="fa-solid fa-forward"></i></button>
+          <div class="backward">
+            <button id="backward"><i class="fa-solid fa-backward"></i></button>
+          </div>
+          <div class="play_pause">
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="pause"><i class="fa-solid fa-pause"></i></button>
+          </div>
+          <div class="forward">
+            <button id="forward"><i class="fa-solid fa-forward"></i></button>
+          </div>
         </div>
       </div>
     </div>
