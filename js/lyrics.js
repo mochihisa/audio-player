@@ -7,6 +7,7 @@ function main() {
   let media = document.getElementById('music');
   let seek_bar = document.getElementById("seek_bar");
 
+
   seek_bar.max = media.duration;
 
   timestamp = 0;
@@ -41,7 +42,7 @@ function update() {
   let media = document.getElementById('music');
   let now = media.currentTime;
 
-  //console.log(now);
+  console.log(now);
   //console.log(media.paused);
   //console.log(counter);
   //console.log(lyrics.length);

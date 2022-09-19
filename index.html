@@ -58,9 +58,9 @@
           <h1>01. カロリーゼロ</h1>
           <p class="artist-mob">作詞・作曲 : ぺんぺん</p>
         </div>
-        <audio id="music" src="./audio-data/カロリーゼロ.flac" preload="metadata"></audio>
+        <audio id="music" src="./audio-data/カロリーゼロ.flac"></audio>
         <div class="seek_bar">
-          <input type="range" id="seek_bar" value="0">
+          <input type="range" id="seek_bar" value="0" >
         </div>
         <div class="play-pause">
           <div class="backward">
@@ -85,9 +85,6 @@
   //  window.addEventListener("orientationchange", function() {
   //   location.reload();
   //});
-  let seek_bar = document.getElementById("seek_bar");
-  let media = document.getElementById('music');
-  seek_bar.max = media.duration;
 </script>
 
 </html>
