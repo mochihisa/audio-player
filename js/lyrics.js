@@ -55,8 +55,9 @@ function update() {
 
   //  console.log(lyrics[8]);
   if (timestamp % 60 == 0) {
-    seek_bar.value = media.currentTime;
+    //seek_bar.value = media.currentTime;
   }
+  seek_bar.value = media.currentTime;
   if (timestamp % 5 == 0) {
     if (lyrics.length > counter) {
       if (now >= lyrics[counter + 1][0]) {
