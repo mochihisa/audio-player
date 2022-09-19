@@ -1,4 +1,4 @@
-var CACHE_NAME = 'test_appv1.0.1';
+var CACHE_NAME = 'test_appv1.0.0';
 var urlsToCache = [
   '/audio-player/img/1659197542821.webp',
   '/audio-player/audio-data/カロリーゼロ.flac',
