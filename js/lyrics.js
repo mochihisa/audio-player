@@ -175,3 +175,5 @@ media.addEventListener('loadedmetadata', function() {
 	console.log(media.duration);
   seek_bar.max = media.duration;
 });
+
+console.log('v1.0.1');
