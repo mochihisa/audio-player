@@ -30,21 +30,22 @@ function main() {
   lyric.innerHTML = '';
   lyric_a.innerHTML = lyrics[0][1];
 
-  media.addEventListener('playing', {
-    handleEvent: update
-  });
+//  media.addEventListener('playing', {
+//    handleEvent: update
+//  });
 
   media.addEventListener('pause', function() {
     window.cancelAnimationFrame(id);
   })
-}
 
-  let media = document.getElementById('music');
   let now = media.currentTime;
 
   console.log(now);
   //console.log(counter);
   console.log(media.paused);
+}
+
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
