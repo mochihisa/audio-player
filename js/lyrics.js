@@ -1,5 +1,5 @@
 function main() {
-  console.log('v1.0.0');
+  console.log('v1.0.1');
 
   let text_form = document.getElementById('text_form');
   let output = document.getElementById('output');
@@ -30,22 +30,61 @@ function main() {
   lyric.innerHTML = '';
   lyric_a.innerHTML = lyrics[0][1];
 
-//  media.addEventListener('playing', {
-//    handleEvent: update
-//  });
+  media.addEventListener('playing', {
+    handleEvent: update
+  });
 
   media.addEventListener('pause', function() {
     window.cancelAnimationFrame(id);
   })
+}
 
+function update() {
+
+  let media = document.getElementById('music');
   let now = media.currentTime;
 
   console.log(now);
   //console.log(counter);
   console.log(media.paused);
+  //console.log(counter);
+  //console.log(lyrics.length);
+  timestamp++;
+
+  id = window.requestAnimationFrame(update);
+
+
+  let seek_bar = document.getElementById("seek_bar");
+
+  //  console.log(lyrics[8]);
+  if (timestamp % 60 == 0) {
+    seek_bar.value = media.currentTime;
+  }
+//  seek_bar.value = media.currentTime;
+  if (timestamp % 5 == 0) {
+    if (lyrics.length > counter) {
+      if (now >= lyrics[counter + 1][0]) {
+        counter++;
+      } else {
+        if (now >= lyrics[counter][0]) {
+          if (counter == 0) {
+            lyric_b.innerHTML = '';
+            lyric.innerHTML = lyrics[counter][1];
+            lyric_a.innerHTML = lyrics[counter + 1][1];
+          } else {
+            lyric_b.innerHTML = lyrics[counter - 1][1];
+            lyric.innerHTML = lyrics[counter][1];
+            lyric_a.innerHTML = lyrics[counter + 1][1];
+          }
+          counter++;
+        } else {
+          counter--;
+        }
+      }
+    }
+  }
+
 }
-
-
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -110,16 +149,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
-let seek_bar = document.getElementById("seek_bar");
 
-seek_bar.addEventListener('input', function() {
-  let media = document.getElementById('music');
-  seek_bar.max = media.duration;
-  //console.log(seek_bar.value);
-  //console.log(seek_bar.max);
-  //console.log(media.duration);
-  media.currentTime = seek_bar.value;
-});
 
 
 let media = document.getElementById('music');
