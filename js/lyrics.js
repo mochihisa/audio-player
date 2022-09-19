@@ -155,15 +155,21 @@ seek_bar.addEventListener('input', function() {
   media.currentTime = seek_bar.value;
 });
 
-let audio = document.getElementById('music');
-audio.addEventListener("ended", function() {
 
+let media = document.getElementById('music');
+media.addEventListener("ended", function() {
   const btn_backward = document.getElementById('backward');
   const btn_play = document.getElementById('play');
   const btn_pause = document.getElementById('pause');
-  audio.currentTime = 0;
+  media.currentTime = 0;
   btn_backward.style.color = 'rgba(0, 0, 0, 0.3)';
   btn_pause.style.display = 'none';
   btn_play.style.display = 'block';
   seek_bar.value = "0";
 }, false);
+
+
+media.addEventListener('loadedmetadata', function() {
+	console.log(media.duration);
+  seek_bar.max = media.duration;
+});
