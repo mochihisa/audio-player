@@ -1,4 +1,6 @@
 function main() {
+  console.log('v1.0.1');
+  
   let text_form = document.getElementById('text_form');
   let output = document.getElementById('output');
   let lyric_b = document.getElementById('lyric_b');
@@ -175,5 +177,3 @@ media.addEventListener('loadedmetadata', function() {
 	console.log(media.duration);
   seek_bar.max = media.duration;
 });
-
-console.log('v1.0.1');
