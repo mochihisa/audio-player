@@ -1,6 +1,6 @@
 function main() {
-  console.log('v1.0.1');
-  
+  console.log('v1.0.2');
+
   let text_form = document.getElementById('text_form');
   let output = document.getElementById('output');
   let lyric_b = document.getElementById('lyric_b');
@@ -59,7 +59,7 @@ function update() {
   if (timestamp % 60 == 0) {
     //seek_bar.value = media.currentTime;
   }
-  seek_bar.value = media.currentTime;
+//  seek_bar.value = media.currentTime;
   if (timestamp % 5 == 0) {
     if (lyrics.length > counter) {
       if (now >= lyrics[counter + 1][0]) {
