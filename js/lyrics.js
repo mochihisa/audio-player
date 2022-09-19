@@ -1,5 +1,5 @@
 function main() {
-  console.log('v1.0.0');
+  console.log('v1.0.1');
 
   let text_form = document.getElementById('text_form');
   let output = document.getElementById('output');
@@ -45,8 +45,8 @@ function update() {
   let now = media.currentTime;
 
   console.log(now);
-  console.log(counter);
-  //console.log(media.paused);
+  //console.log(counter);
+  console.log(media.paused);
   //console.log(counter);
   //console.log(lyrics.length);
   timestamp++;
