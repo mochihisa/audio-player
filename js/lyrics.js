@@ -116,6 +116,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   btn_play.addEventListener('click', e => {
     media.play();
+    seek_bar.max = media.duration;
     btn_play.style.display = 'none';
     btn_pause.style.display = 'block';
     btn_backward.style.color = 'rgba(0, 0, 0, 0.7)';
