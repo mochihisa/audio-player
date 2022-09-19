@@ -1,5 +1,5 @@
 function main() {
-  console.log('v1.0.1');
+  console.log('v1.0.0');
 
   let text_form = document.getElementById('text_form');
   let output = document.getElementById('output');
@@ -149,7 +149,16 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
+let seek_bar = document.getElementById("seek_bar");
 
+seek_bar.addEventListener('input', function() {
+  let media = document.getElementById('music');
+  seek_bar.max = media.duration;
+  //console.log(seek_bar.value);
+  //console.log(seek_bar.max);
+  //console.log(media.duration);
+  media.currentTime = seek_bar.value;
+});
 
 
 let media = document.getElementById('music');
