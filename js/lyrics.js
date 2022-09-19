@@ -1,5 +1,5 @@
 function main() {
-  console.log('v1.0.2');
+  console.log('v1.0.0');
 
   let text_form = document.getElementById('text_form');
   let output = document.getElementById('output');
@@ -45,6 +45,7 @@ function update() {
   let now = media.currentTime;
 
   console.log(now);
+  console.log(counter);
   //console.log(media.paused);
   //console.log(counter);
   //console.log(lyrics.length);
@@ -57,7 +58,7 @@ function update() {
 
   //  console.log(lyrics[8]);
   if (timestamp % 60 == 0) {
-    //seek_bar.value = media.currentTime;
+    seek_bar.value = media.currentTime;
   }
 //  seek_bar.value = media.currentTime;
   if (timestamp % 5 == 0) {
@@ -153,9 +154,9 @@ let seek_bar = document.getElementById("seek_bar");
 seek_bar.addEventListener('input', function() {
   let media = document.getElementById('music');
   seek_bar.max = media.duration;
-  console.log(seek_bar.value);
-  console.log(seek_bar.max);
-  console.log(media.duration);
+  //console.log(seek_bar.value);
+  //console.log(seek_bar.max);
+  //console.log(media.duration);
   media.currentTime = seek_bar.value;
 });
 
