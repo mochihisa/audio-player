@@ -41,6 +41,7 @@ function main() {
 
 function update() {
 
+
   let media = document.getElementById('music');
   let now = media.currentTime;
 
@@ -60,7 +61,7 @@ function update() {
   if (timestamp % 60 == 0) {
     seek_bar.value = media.currentTime;
   }
-//  seek_bar.value = media.currentTime;
+  //  seek_bar.value = media.currentTime;
   if (timestamp % 5 == 0) {
     if (lyrics.length > counter) {
       if (now >= lyrics[counter + 1][0]) {
@@ -82,6 +83,9 @@ function update() {
         }
       }
     }
+  }
+  if (media.paused == true) {
+    window.cancelAnimationFrame(id);
   }
 
 }
@@ -163,6 +167,7 @@ seek_bar.addEventListener('input', function() {
 
 let media = document.getElementById('music');
 media.addEventListener("ended", function() {
+  window.cancelAnimationFrame(id);
   const btn_backward = document.getElementById('backward');
   const btn_play = document.getElementById('play');
   const btn_pause = document.getElementById('pause');
@@ -175,6 +180,6 @@ media.addEventListener("ended", function() {
 
 
 media.addEventListener('loadedmetadata', function() {
-	console.log(media.duration);
+  console.log(media.duration);
   seek_bar.max = media.duration;
 });
