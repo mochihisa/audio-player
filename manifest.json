@@ -4,8 +4,8 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "./index.html",
-  "name": "ありふれた2人だったとしても「変わらないで。」と花に願う。",
-  "short_name": "ありふれた2人だったとしても「変わらないで。」と花に願う。",
+  "name": "ありふれた日々の残し方",
+  "short_name": "ありふれた日々の残し方",
   "icons": [{
       "src": "/img/icon-192x192.png",
       "sizes": "192x192",

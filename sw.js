@@ -1,7 +1,7 @@
 var CACHE_NAME = 'test_appv1.0.0';
 var urlsToCache = [
-  '/img/1659197542821.webp',
-  '/audio-data/カロリーゼロ.flac',
+  '/img/image.webp',
+  '/audio-data/ありふれた日々の残し方.flac',
   '/js/lyrics.js',
   '/css/index.css',
   'https://kit.fontawesome.com/a75100396c.js',
